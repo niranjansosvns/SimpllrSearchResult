@@ -1,0 +1,241 @@
+@color0: #000000; 
+@color1: #ffffff; 
+@color2: #eeeeee; 
+@color3: #1b1a1a; 
+
+@width0: 49.99999%; 
+@width1: 58.33333%; 
+@width2: 99.99999%; 
+@width3: 91.66666%; 
+@width4: 83.33333%; 
+@width5: 74.99999%; 
+@width6: 66.66666%; 
+@width7: 16.66666%; 
+@width8: 24.99999%; 
+@width9: 33.33333%; 
+@width10: 41.66666%; 
+@width11: 8.33333%; 
+@width20: 100%; 
+@width21: 24px; 
+
+@height0: 24px; 
+@height1: 100%; 
+@height2: 0; 
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	box-sizing: border-box;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 1;
+	overflow-x: hidden;
+}
+* {
+	box-sizing: inherit;
+	&:before {
+		box-sizing: inherit;
+	}
+	&:after {
+		box-sizing: inherit;
+	}
+}
+body {
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 1;
+	margin: 0;
+}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary  {
+	display: block;
+}
+a {
+	-webkit-text-decoration-skip: objects;
+	background-color: transparent;
+	color: inherit;
+	&:active {
+		outline-width: 0;
+	}
+	&:hover {
+		outline-width: 0;
+	}
+}
+.topnav {
+	background-color: @color3;
+	overflow: hidden;
+	a {
+		border-bottom: 3px solid transparent;
+		color:grey;
+		display: block;
+		float: left;
+		font-size: 17px;
+		padding: 14px 16px;
+		text-align: center;
+		text-decoration: none;
+		&:hover {
+			border-bottom: 1px solid @color3;
+		}
+	}
+	a.active {
+		border-bottom: 1px solid @color3;
+	}
+}
+.column {
+	float: left;
+	padding: 10px;
+	width: 50%;
+}
+.row {
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}
+.clearfix {
+	overflow: hidden;
+}
+.social_events {
+	float: left;
+}
+
+hr {
+	border-top: 1px solid @color2;
+	border: 0;
+	box-sizing: content-box;
+	height: @height2;
+	overflow: visible;
+}
+.container {
+	max-width: 400px;
+	position: relative;
+	width: @width20;
+	&:hover {
+		.overlay {
+			opacity: 1;
+		}
+	}
+}
+.image {
+	display: block;
+	height: auto;
+	width: @width20;
+}
+
+.search-row-padding {
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+	&:before {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}
+.search-third {
+	float: left;
+	width: @width20;
+}
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before, .w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after  {
+	clear: both;
+	content: "";
+	display: table;
+}
+.w3-col,.w3-half,.search-third,.w3-twothird,.w3-threequarter,.w3-quarter  {
+	float: left;
+	width: @width20;
+}
+.search-third {
+	width: @width6;
+}
+.w3-twothird {
+	width: @width9;
+}
+.w3-content {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 980px;
+}
+.search-row-padding,.search-row-padding>.w3-half,.search-row-padding>.search-third,.search-row-padding>.w3-twothird,.search-row-padding>.w3-threequarter,.search-row-padding>.w3-quarter,.search-row-padding>.w3-col  {
+	padding: 0 8px;
+}
+
+.SearchedFor{
+    padding-left: 20px; font-size: 17px;
+}
+.main-nav{
+    padding-left: 18px
+}
+
+.content-container{
+    border-right:1px solid #757575;
+}
+
+.row-width{
+    width:8%
+}
+
+.label-div{
+    padding-top: 24px;  font-size: 14px;padding-left: 82px;
+}
+
+.label-text{
+    text-transform: uppercase;
+                    font-size: 50%;padding-bottom:5px;
+}
+
+.label-content{
+    padding-left: 82px;
+}
+
+.person-text{
+    font-size: 14px;padding-left: 71px;
+}
+
+.padding-left{
+    padding-left: 71px;  
+}
+
+.contant-color{
+    color :cyan
+}
+
+.tel-contact-color{
+    color:grey
+}
+
+.col-right-container{
+    font-size: 14px
+}
+
+.col-right-label-desc{
+    font-size: 14px;padding-left: 44px;
+}
+.col-right-label-category{
+    padding-left: 48px;font-size: 11px;
+}
+
+.col-right-label-empty{
+    padding-left: 48px;
+}
+
+.col-right-label-parentDiv{
+    padding-bottom: 10px;
+}
+
+.search-category{
+    font-size: 11px
+}
+.w3-container {
+	padding: 0.01em 16px;
+}
+
+.search-margin-top {
+	margin-top: 16px!important;
+}
+.search-white {
+	background-color: @color1!important;
+	color: @color0!important;
+}

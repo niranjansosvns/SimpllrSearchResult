@@ -7,15 +7,16 @@
   <meta name="keywords" content="HTML,CSS,XML,JavaScript">
   <meta name="author" content="Niranjan Verma">
   <meta name="viewport" content="width=device-width, initial-scale=1">  
-  <link rel="stylesheet" href="app/css/style.css">
+  <link rel="stylesheet/less" type="text/css" href="app/css/style.less" />
+  <script src="app/js/less.js" type="text/javascript"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   <body>
     
     <!-- Page Container -->
   <div class="search-margin-top" style="max-width:1400px;">
-      <span style="padding-left: 20px; font-size: 17px;">Searchedfor : "Test"</span>   
-        <div class="topnav search-white" style="padding-left: 18px">      
+      <span class="SearchedFor">Searchedfor : "Test"</span>   
+        <div class="topnav search-white" class="main-nav">      
           <a class="active" href="#home">Top</a>
           <a href="#news">Sites(4)</a>
           <a href="#news">Content(167)</a>
@@ -25,91 +26,85 @@
           <a href="#contact">Feed</a>
       </div>
     <!-- The Grid -->
-    <div class="w3-row-padding">    
+    <div class="search-row-padding">    
       <!-- Left Column -->
-      <div class="w3-third">      
-        <div class="search-white w3-text-grey">
-          <div class="w3-container" style="border-right:1px solid #757575;">
+      <div class="search-third">      
+        <div class="search-white search-text-grey">
+          <div class="w3-container content-container">
               <div class="clearfix" >
-                 <img class="social_events" src="app/images/social_events.png" alt="social Events" style="width:8%">
-                  <div style="padding-top: 24px;  font-size: 14px;padding-left: 82px;"> <span><small style="text-transform: uppercase;
-                    font-size: 50%;padding-bottom:5px;">site</small></span><br><span>Social Events</span></div>
-                  <div style="padding-left: 82px;"><span>Activities outdside of work</span></div>
+                 <img class="social_events row-width" src="app/images/social_events.png" alt="social Events">
+                  <div class="label-div"> <span><small class="label-text">site</small></span><br><span>Social Events</span></div>
+                  <div class="label-content"><span>Activities outdside of work</span></div>
               </div>
             <hr>
   
             <div class="clearfix">
-                <img class="social_events" src="app/images/new_article.png" alt="social Events" style="width:8%">
-                 <div style="padding-top: 24px;font-size: 14px;padding-left: 82px;"><small style="text-transform: uppercase;
-                  font-size: 50%;padding-bottom:5px;">Blog Post</small><br><span>Another New Article</span></div>
-                 <div style="padding-left: 82px;"><span>Lorem Ipsum dolor sit Lorem Ipsum dolor sitLorem Ipsum dolor sit...</span></div>
-                 <div style="padding-left: 82px;"><span>By <em style="color:cyan">user name</em> on Aug 17, 2015</span></div>
+                <img class="social_events row-width" src="app/images/new_article.png" alt="social Events">
+                 <div class="label-div"><small class="label-text">Blog Post</small><br><span>Another New Article</span></div>
+                 <div class="label-content"><span>Lorem Ipsum dolor sit Lorem Ipsum dolor sitLorem Ipsum dolor sit...</span></div>
+                 <div class="label-content"><span>By <em class="contant-color">user name</em> on Aug 17, 2015</span></div>
              </div>
            <hr>
           <div class="row clearfix">
               <div class="column">
                   <img class="social_events" src="app/images/emaa_akee.png" alt="social Events" style="width:15%">
-                   <div style="font-size: 14px;padding-left: 71px;"> <small style="text-transform: uppercase;
-                    font-size: 50%;padding-bottom:5px;">person</small><br><span>Emma Okeefe</span></div>
-                   <div style="padding-left: 71px;"><span>vice president of sales - sales</span></div>
-                   <div style="padding-left: 71px;"><span>mulipitas, CA,USA</span></div> 
+                   <div class="person-text"> <small class="label-text">person</small><br><span>Emma Okeefe</span></div>
+                   <div class="padding-left"><span>vice president of sales - sales</span></div>
+                   <div class="padding-left"><span>mulipitas, CA,USA</span></div> 
                </div>
     
                <div class="column">
-                  <a href="tel:1231231234" style="color :cyan"> <i class="fa fa-phone " style="color:grey"></i>123-123-1234</a><br />
-                  <a href="mailto:sample@email.com" style="color:cyan"> <i class="fa fa-envelope-o" style="color:grey"></i>sample@email.com</a>
+                  <a href="tel:1231231234" class="contant-color"> <i class="fa fa-phone tel-contact-color"></i>123-123-1234</a><br />
+                  <a href="mailto:sample@email.com" class="contant-color"> <i class="fa fa-envelope-o tel-contact-color"></i>sample@email.com</a>
                </div>
           </div>
          <hr>
        <div class="row clearfix">
           <div class="column">
               <img class="social_events" src="app/images/jospeh.png" alt="social Events" style="width:15%">
-               <div style="font-size: 14px; padding-left: 71px;"><small style="text-transform: uppercase;
-                font-size: 50%;padding-bottom:5px;">Person <strong style="color:cyan">Expertise match</strong></strong></small><br><span>Joseph T . Greene</span></div>
-               <div style="padding-left: 71px;"><span>sales executive - sales</span></div>
-               <div style="padding-left: 71px;"><span>mulipitas, CA,USA</span></div> 
+               <div class="person-text"><small class="label-text">Person <strong class="contant-color">Expertise match</strong></strong></small><br><span>Joseph T . Greene</span></div>
+               <div class="padding-left"><span>sales executive - sales</span></div>
+               <div class="padding-left"><span>mulipitas, CA,USA</span></div> 
            </div>
   
            <div class="column">
-              <a href="tel:1231231234" style="color :cyan"> <i class="fa fa-phone " style="color:grey"></i>123-123-1234</a><br />
-              <a href="mailto:sample@email.com" style="color:cyan"> <i class="fa fa-envelope-o" style="color:grey"></i>sample@email.com</a>
+              <a href="tel:1231231234" class="contant-color"> <i class="fa fa-phone tel-contact-color" ></i>123-123-1234</a><br />
+              <a href="mailto:sample@email.com" class="contant-color"> <i class="fa fa-envelope-o tel-contact-color"></i>sample@email.com</a>
            </div>
        </div>
        <hr>
        <div class="row clearfix">
           <div class="column">
               <img class="social_events" src="app/images/Jackline.png" alt="social Events" style="width:15%">
-               <div style="font-size: 14px;padding-left: 71px;"><small style="text-transform: uppercase;
-                  font-size: 50%;padding-bottom:5px;">person</small><br><span>Jacquiline M. Goodrich</span></div>
-               <div style="padding-left: 71px;"><span>Product manager</span></div>
-               <div style="padding-left: 71px;"><span>Brighton ,UK</span></div> 
+               <div class="person-text"><small class="label-text">person</small><br><span>Jacquiline M. Goodrich</span></div>
+               <div class="padding-left"><span>Product manager</span></div>
+               <div class="padding-left"><span>Brighton ,UK</span></div> 
            </div>
            <div class="column">
-              <a href="tel:1231231234" style="color :cyan"> <i class="fa fa-mobile-phone" style="color:grey"></i>123-123-1234</a><br />
+              <a href="tel:1231231234" class="contant-color"> <i class="fa fa-mobile-phone tel-contact-color"></i>123-123-1234</a><br />
             </div>
        </div>
      <hr>
         <div>
-          <img class="social_events" src="app/images/technical_support.png" alt="social Events" style="width:8%">
-           <div style="padding-top: 24px;font-size: 14px;padding-left: 82px;"><small style="text-transform: uppercase;
-            font-size: 50%;padding-bottom:5px;">site</small><br><span>Technical support</span></div>
-           <div style="padding-left: 82px;"><span>Vice president of sales - sales</span></div>
-           <div style="padding-left: 82px;"><span>Mulipitas, CA,USA</span></div> 
+          <img class="social_events row-width" src="app/images/technical_support.png" alt="social Events">
+           <div class="label-div"><small class="label-text">site</small><br><span>Technical support</span></div>
+           <div class="label-content"><span>Vice president of sales - sales</span></div>
+           <div class="label-content"><span>Mulipitas, CA,USA</span></div> 
        </div>
      <hr>
      <div>
-        <img class="social_events" src="app/images/new_article.png" alt="social Events" style="width:8%">
-         <div style="padding-top: 24px;font-size: 14px;padding-left: 82px;">
-            <small style="text-transform: uppercase;font-size: 50%;padding-bottom:5px;">page</small><br><span>Another page Article</span></div>
-         <div style="padding-left: 82px;"><span>Lorep ipsum Lorep ipsumLorep ipsumLorep ipsum Lorep ipsum Lorep ipsum</span></div>
-         <div style="padding-left: 82px;"><span>In- <strong style="color:cyan">california</strong> on Aug 17, 2015</span></div> 
+        <img class="social_events row-width" src="app/images/new_article.png" alt="social Events">
+         <div class="label-div">
+            <small class="label-text">page</small><br><span>Another page Article</span></div>
+         <div class="label-content"><span>Lorep ipsum Lorep ipsumLorep ipsumLorep ipsum Lorep ipsum Lorep ipsum</span></div>
+         <div class="label-content"><span>In- <strong class="contant-color">california</strong> on Aug 17, 2015</span></div> 
      </div>
    <hr>
    <div>
-      <img class="social_events" src="app/images/new_article1.png" alt="social Events" style="width:8%">
-       <div style="padding-top: 24px;font-size: 14px;padding-left: 82px;">
-          <small style="text-transform: uppercase;font-size: 50%;padding-bottom:5px;">Album</small><br><span>Planinng for the Future</span></div>
-       <div style="padding-left: 82px;"><span>In- <strong style="color:cyan">Human Resources</strong> on Aug 17, 2015</span></div>
+      <img class="social_events row-width" src="app/images/new_article1.png" alt="social Events">
+       <div class="label-div">
+          <small class="label-text">Album</small><br><span>Planinng for the Future</span></div>
+       <div class="label-content"><span>In- <strong class="contant-color">Human Resources</strong> on Aug 17, 2015</span></div>
    </div>
  <hr>
     </div>
@@ -120,114 +115,114 @@
   
       <!-- Right Column -->
       <div class="w3-twothird">      
-        <div class="w3-container  search-white w3-margin-bottom" style="font-size: 14px">
-          <span class="w3-text-grey w3-padding-16">Intranet files (141)</span>
+        <div class="w3-container search-white w3-margin-bottom col-right-container">
+          <span class="search-text-grey w3-padding-16">Intranet files (141)</span>
           <hr>
-          <div style="padding-bottom: 10px;" class="w3-text-grey">
-               <img class="social_events" src="app/images/sales.png" alt="social Events" style="width:8%">
-               <div style="font-size: 14px;padding-left: 44px;"><span>Sales</span></div>
-               <div style="padding-left: 48px;font-size: 11px;"><span >In- <strong style="color:cyan">sales</strong></span></div>
-               <div style="padding-left: 48px;"><span></span></div> 
+          <div class="search-text-grey col-right-label-parentDiv">
+               <img class="social_events row-width" src="app/images/sales.png" alt="social Events">
+               <div class="col-right-label-desc"><span>Sales</span></div>
+               <div class="col-right-label-category"><span >In- <strong class="contant-color">sales</strong></span></div>
+               <div class="col-right-label-empty"><span></span></div> 
            </div>
 
-          <div style="padding-bottom: 10px;" class="w3-text-grey">
-              <img class="social_events" src="app/images/seasion_sales.png" alt="social Events" style="width:8%">
-              <div style="font-size: 14px;padding-left: 44px;"><span>Seasion-revenue.xsl</span></div>
-              <div style="padding-left: 48px;font-size: 11px;"><span>In-<strong style="color:cyan">sales</strong></span></div>
-              <div style="padding-left: 48px;"><span></span></div> 
+          <div class="search-text-grey col-right-label-parentDiv">
+              <img class="social_events row-width" src="app/images/seasion_sales.png" alt="social Events">
+              <div class="col-right-label-desc"><span>Seasion-revenue.xsl</span></div>
+              <div class="col-right-label-category"><span>In-<strong class="contant-color">sales</strong></span></div>
+              <div class="col-right-label-empty"><span></span></div> 
           </div>
 
-         <div style="padding-bottom: 10px;" class="w3-text-grey">
-              <img class="social_events" src="app/images/logo.png" alt="social Events" style="width:8%">
-              <div style="font-size: 14px;padding-left: 44px;"><span>logo.png</span></div>
-              <div style="padding-left: 48px;font-size: 11px;"><span>In-<strong style="color:cyan">branding</strong></span></div>
-              <div style="padding-left: 48px;"><span></span></div> 
+         <div class="search-text-grey col-right-label-parentDiv">
+              <img class="social_events row-width" src="app/images/logo.png" alt="social Events" >
+              <div class="col-right-label-desc"><span>logo.png</span></div>
+              <div class="col-right-label-category"><span>In-<strong class="contant-color">branding</strong></span></div>
+              <div class="col-right-label-empty"><span></span></div> 
           </div>
 
-         <div style="padding-bottom: 10px;" class="w3-text-grey">
-              <img class="social_events" src="app/images/pdf.png" alt="social Events" style="width:8%">
-               <div style="font-size: 14px;padding-left: 44px;"><span>marketting_opportunities in germo...</span></div>
-               <div style="padding-left: 48px;font-size: 11px;"><span>by <strong style="color:cyan">Jane Edwards</strong></span></div>
-               <div style="padding-left: 48px;"><span></span></div> 
+         <div class="search-text-grey col-right-label-parentDiv">
+              <img class="social_events row-width" src="app/images/pdf.png" alt="social Events" >
+               <div class="col-right-label-desc"><span>marketting_opportunities in germo...</span></div>
+               <div class="col-right-label-category"><span>by <strong class="contant-color">Jane Edwards</strong></span></div>
+               <div class="col-right-label-empty"><span></span></div> 
            </div>
 
-          <div style="padding-bottom: 10px;" class="w3-text-grey">
-              <img class="social_events" src="app/images/pdf.png" alt="social Events" style="width:8%">
-               <div style="font-size: 14px;padding-left: 44px;"><span>pitch deck_final_final_final.ppt</span></div>
-               <div style="padding-left: 48px;font-size: 11px;"><span>by <strong style="color:cyan">Jane Edwards</strong></span></div>
-               <div style="padding-left: 48px;"><span></span></div> 
+          <div class="search-text-grey col-right-label-parentDiv">
+              <img class="social_events row-width" src="app/images/pdf.png" alt="social Events" >
+               <div class="col-right-label-desc"><span>pitch deck_final_final_final.ppt</span></div>
+               <div class="col-right-label-category"><span>by <strong class="contant-color">Jane Edwards</strong></span></div>
+               <div class="col-right-label-empty"><span></span></div> 
            </div>
 
-          <div style="padding-bottom: 10px;" class="w3-text-grey">
-              <img class="social_events" src="app/images/barbara.png" alt="social Events" style="width:8%">
-               <div style="font-size: 14px;padding-left: 44px;"><span>Barbara portrait.jpg</span></div>
-               <div style="padding-left: 48px;font-size: 11px;"><span>In <strong style="color:cyan">About company</strong></span></div>
-               <div style="padding-left: 48px;"><span></span></div> 
+          <div class="search-text-grey col-right-label-parentDiv">
+              <img class="social_events row-width" src="app/images/barbara.png" alt="social Events">
+               <div class="col-right-label-desc"><span>Barbara portrait.jpg</span></div>
+               <div class="col-right-label-category"><span>In <strong class="contant-color">About company</strong></span></div>
+               <div class="col-right-label-empty"><span></span></div> 
            </div>
 
 
-          <div style="padding-bottom: 10px;" class="w3-text-grey">
-              <img class="social_events" src="#" alt="" style="width:8%">
+          <div class="search-text-grey col-right-label-parentDiv">
+              <img class="social_events row-width" src="#" alt="" >
                <div style="font-size: 14px; padding-left: 44px;"><span></span></div>
-               <div style="padding-left: 48px;font-size: 11px;"><span><a href="#" style="color:cyan">View all intranet files</a></span></div>
-               <div style="padding-left: 48px;"><span></span></div> 
+               <div class="col-right-label-category"><span><a href="#" class="contant-color">View all intranet files</a></span></div>
+               <div class="col-right-label-empty"><span></span></div> 
            </div>
 
            
             
 
             <hr>
-            <span style="font-size: 11px" class="w3-text-grey w3-padding-16">Google Drives Files (197)</span>
+            <span class=" search-category search-text-grey w3-padding-16">Google Drives Files (197)</span>
             <hr>
-            <div style="padding-bottom: 10px;" class="w3-text-grey">
-                <img class="social_events" src="app/images/sales.png" alt="social Events" style="width:8%">
-                <div style="font-size: 14px;padding-left: 44px;"><span>Sales</span></div>
-                <div style="padding-left: 48px;font-size: 11px;"><span >In- <strong style="color:cyan">sales</strong></span></div>
-                <div style="padding-left: 48px;"><span></span></div> 
+            <div class="search-text-grey col-right-label-parentDiv">
+                <img class="social_events row-width" src="app/images/sales.png" alt="social Events">
+                <div class="col-right-label-desc"><span>Sales</span></div>
+                <div class="col-right-label-category"><span >In- <strong class="contant-color">sales</strong></span></div>
+                <div class="col-right-label-empty"><span></span></div> 
             </div>
  
-           <div style="padding-bottom: 10px;" class="w3-text-grey">
-               <img class="social_events" src="app/images/seasion_sales.png" alt="social Events" style="width:8%">
-               <div style="font-size: 14px;padding-left: 44px;"><span>Seasion-revenue.xsl</span></div>
-               <div style="padding-left: 48px;font-size: 11px;"><span>In-<strong style="color:cyan">sales</strong></span></div>
-               <div style="padding-left: 48px;"><span></span></div> 
+            <div class="search-text-grey col-right-label-parentDiv">
+                <img class="social_events row-width" src="app/images/seasion_sales.png" alt="social Events">
+               <div class="col-right-label-desc"><span>Seasion-revenue.xsl</span></div>
+               <div class="col-right-label-category"><span>In-<strong class="contant-color">sales</strong></span></div>
+               <div class="col-right-label-empty"><span></span></div> 
            </div>
  
-          <div style="padding-bottom: 10px;" class="w3-text-grey">
-               <img class="social_events" src="app/images/logo.png" alt="social Events" style="width:8%">
-               <div style="font-size: 14px;padding-left: 44px;"><span>logo.png</span></div>
-               <div style="padding-left: 48px;font-size: 11px;"><span>In-<strong style="color:cyan">branding</strong></span></div>
-               <div style="padding-left: 48px;"><span></span></div> 
+           <div class="search-text-grey col-right-label-parentDiv">
+              <img class="social_events row-width" src="app/images/logo.png" alt="social Events">
+               <div class="col-right-label-desc"><span>logo.png</span></div>
+               <div class="col-right-label-category"><span>In-<strong class="contant-color">branding</strong></span></div>
+               <div class="col-right-label-empty"><span></span></div> 
            </div>
  
-          <div style="padding-bottom: 10px;" class="w3-text-grey">
-               <img class="social_events" src="app/images/pdf.png" alt="social Events" style="width:8%">
-                <div style="font-size: 14px;padding-left: 44px;"><span>marketting_opportunities in germo...</span></div>
-                <div style="padding-left: 48px;font-size: 11px;"><span>by <strong style="color:cyan">Jane Edwards</strong></span></div>
-                <div style="padding-left: 48px;"><span></span></div> 
+           <div class="search-text-grey col-right-label-parentDiv">
+              <img class="social_events row-width" src="app/images/pdf.png" alt="social Events" >
+                <div class="col-right-label-desc"><span>marketting_opportunities in germo...</span></div>
+                <div class="col-right-label-category"><span>by <strong class="contant-color">Jane Edwards</strong></span></div>
+                <div class="col-right-label-empty"><span></span></div> 
             </div>
  
-           <div style="padding-bottom: 10px;" class="w3-text-grey">
-               <img class="social_events" src="app/images/pdf.png" alt="social Events" style="width:8%">
-                <div style="font-size: 14px;padding-left: 44px;"><span>pitch deck_final_final_final.ppt</span></div>
-                <div style="padding-left: 48px;font-size: 11px;"><span>by <strong style="color:cyan">Jane Edwards</strong></span></div>
-                <div style="padding-left: 48px;"><span></span></div> 
+            <div class="search-text-grey col-right-label-parentDiv">
+                <img class="social_events row-width" src="app/images/pdf.png" alt="social Events" >
+                <div class="col-right-label-desc"><span>pitch deck_final_final_final.ppt</span></div>
+                <div class="col-right-label-category"><span>by <strong class="contant-color">Jane Edwards</strong></span></div>
+                <div class="col-right-label-empty"><span></span></div> 
             </div>
  
-           <div style="padding-bottom: 10px;" class="w3-text-grey">
-               <img class="social_events" src="app/images/barbara.png" alt="social Events" style="width:8%">
-                <div style="font-size: 14px;padding-left: 44px;"><span>Barbara portrait.jpg</span></div>
-                <div style="padding-left: 48px;font-size: 11px;"><span>In <strong style="color:cyan">About company</strong></span></div>
-                <div style="padding-left: 48px;"><span></span></div> 
+            <div class="search-text-grey col-right-label-parentDiv">
+                <img class="social_events row-width" src="app/images/barbara.png" alt="social Events" >
+                <div class="col-right-label-desc"><span>Barbara portrait.jpg</span></div>
+                <div class="col-right-label-category"><span>In <strong class="contant-color">About company</strong></span></div>
+                <div class="col-right-label-empty"><span></span></div> 
             </div>
  
  
  
-           <div style="padding-bottom: 10px;" class="w3-text-grey">
-               <img class="social_events" src="#" alt="" style="width:8%">
-                <div style="font-size: 14px;padding-left: 44px;"><span></span></div>
-                <div style="padding-left: 48px;font-size: 11px;"><span><a href="#" style="color:cyan">View all Google Drives files</a></span></div>
-                <div style="padding-left: 48px;"><span></span></div> 
+            <div class="search-text-grey col-right-label-parentDiv">
+                <img class="social_events row-width" src="#" alt="" >
+                <div class="col-right-label-desc"><span></span></div>
+                <div class="col-right-label-category"><span><a href="#" class="contant-color">View all Google Drives files</a></span></div>
+                <div class="col-right-label-empty"><span></span></div> 
             </div>
                <hr>
             </div>
